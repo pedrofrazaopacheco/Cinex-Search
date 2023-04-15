@@ -10,6 +10,7 @@
 #define FALSE 0
 
 typedef struct actor_node {
+    char *id;
     char *name;
     struct actor_node *next;
 } Actor_Node;
@@ -36,10 +37,11 @@ unsigned int hash(char *string) {
 Actor_Node* actors_hashmap[HASH_TABLE_SIZE];
 Movie_Node* movies_hashmap[HASH_TABLE_SIZE];
 
-Actor_Node* store_new_actor(char *actor_name) {
-    unsigned int actor_index = hash(actor_name);
+Actor_Node* store_new_actor(char *actor_name, char *actor_id) {
+    unsigned int actor_index = hash(actor_id);
     Actor_Node *new_actor = malloc(sizeof(Actor_Node));
     new_actor->name = strdup(actor_name);
+    new_actor->id = strdup(actor_id);
 
     if (actors_hashmap[actor_index] == NULL) {
         actors_hashmap[actor_index] = new_actor;
@@ -115,7 +117,7 @@ int main() {
     /* Go to each movie in the list, and store it in a hashmap if not already there */
     /* Get the actors pointer and reallocate the actors_list array */
 
-    FILE *file;
+    FILE *actors_data, preproccessing_output;
     char buffer[BUFFER_SIZE];
 
     char *actor_id, *actor_name, *birth_year, *professions, *death_year, *movies;
@@ -131,9 +133,11 @@ int main() {
         movies_hashmap[i] = NULL;
     }
 
-    file = fopen("data.tsv", "r");
+    actors_data = fopen("data.tsv", "r");
+    /* The first line does not matter */
+    fgets(buffer, BUFFER_SIZE, actors_data);
     int line = 0;
-    while(fgets(buffer, BUFFER_SIZE, file)) {
+    while(fgets(buffer, BUFFER_SIZE, actors_data)) {
         buffer[strcspn(buffer, "\n")] = 0;
         actor_id = strtok(buffer, "\t");
         actor_name = strtok(NULL, "\t");
@@ -142,13 +146,35 @@ int main() {
         professions = strtok(NULL, "\t");
         movies = strtok(NULL, "\t");
 
-        current_actor = store_new_actor(actor_name);
+        current_actor = store_new_actor(actor_name, actor_id);
         store_new_movie(movies, current_actor);
     }
     end = clock();
     total_time_passed = ((double)(end - start) / CLOCKS_PER_SEC);
 
     printf("It took %f\n", total_time_passed);
+
+    fseek(actors_data, 0, SEEK_SET);
+
+    while(fgets(buffer, BUFFER_SIZE, actors_data)) {
+
+        current_actor = store_new_actor(actor_name, actor_id);
+        store_new_movie(movies, current_actor);
+    }
+
+    Movie_Node *current_movie;
+    // HASH_TABLE_SIZE
+    for (int i = 0; i < 100; i++) {
+        current_movie = movies_hashmap[i];
+        while (current_movie != NULL) {
+            printf("The movie %s has %d actors and they are: ", current_movie->movie_name, current_movie->num_actors_in_movie);
+            for (int j = 0; j < current_movie->num_actors_in_movie; j++) {
+                printf("%s\t", current_movie->actors_list[j]->name);
+            }
+            printf("\n");
+            current_movie = current_movie->next;
+        }
+    }
 
     printf("Working!\n");
     return 0;
