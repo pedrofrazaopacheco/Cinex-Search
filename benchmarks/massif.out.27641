@@ -1,0 +1,970 @@
+desc: (none)
+cmd: ./CinexSearch
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1421670839
+mem_heap_B=68193457
+mem_heap_extra_B=14213135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2951146877
+mem_heap_B=116664235
+mem_heap_extra_B=30283877
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=4672427701
+mem_heap_B=173399962
+mem_heap_extra_B=49291590
+mem_stacks_B=0
+heap_tree=detailed
+n10: 173399962 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 62608240 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 62608240 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 62608240 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 26409376 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 26409376 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 26409376 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 23040880 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 23040880 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 23040880 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 21153840 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 21153840 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 21153840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 12253802 0x48F538E: strdup (strdup.c:42)
+  n1: 7846762 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 7846762 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 7846762 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 4407040 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 4407040 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 4407040 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10987C: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10988D: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10989E: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 3648328 0x109C56: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 3648328 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 3648328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 285424 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=6005174293
+mem_heap_B=202937777
+mem_heap_extra_B=57493967
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=7951406411
+mem_heap_B=239405345
+mem_heap_extra_B=66557583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9009133432
+mem_heap_B=264271302
+mem_heap_extra_B=73802978
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=11018812693
+mem_heap_B=310897650
+mem_heap_extra_B=87197254
+mem_stacks_B=0
+heap_tree=detailed
+n10: 310897650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 90032880 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 90032880 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 90032880 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 62616912 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 62616912 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 62616912 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 58092008 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 58092008 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 58092008 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 49043232 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 49043232 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 49043232 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 21581618 0x48F538E: strdup (strdup.c:42)
+  n1: 11305994 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 11305994 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 11305994 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 10275624 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 10275624 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 10275624 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10987C: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10988D: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 8000024 0x10989E: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 5025120 0x109C56: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 5025120 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 5025120 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 505808 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=12922719683
+mem_heap_B=358204324
+mem_heap_extra_B=101162972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=14086226979
+mem_heap_B=385758378
+mem_heap_extra_B=109252470
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=15990154263
+mem_heap_B=432185369
+mem_heap_extra_B=123305215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=18084471914
+mem_heap_B=479888366
+mem_heap_extra_B=137078034
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=19607613920
+mem_heap_B=514417126
+mem_heap_extra_B=147174562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=20940363600
+mem_heap_B=545383037
+mem_heap_extra_B=156439323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=22971217447
+mem_heap_B=592885846
+mem_heap_extra_B=170814770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=24557811561
+mem_heap_B=629368710
+mem_heap_extra_B=181781026
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=27096362387
+mem_heap_B=696894538
+mem_heap_extra_B=204460822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=28365636730
+mem_heap_B=727642823
+mem_heap_extra_B=214180505
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=30269549789
+mem_heap_B=770319006
+mem_heap_extra_B=226681978
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=31538824248
+mem_heap_B=798285149
+mem_heap_extra_B=234819923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=33125419164
+mem_heap_B=834202043
+mem_heap_extra_B=245536189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=35346653074
+mem_heap_B=884154318
+mem_heap_extra_B=260359498
+mem_stacks_B=0
+heap_tree=detailed
+n7: 884154318 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 213924880 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 213924880 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 213924880 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 193911848 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 193911848 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 193911848 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 185410344 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 185410344 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 185410344 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 183172704 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 183172704 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 183172704 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 68042950 0x48F538E: strdup (strdup.c:42)
+  n1: 40504119 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 40504119 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 40504119 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 27538831 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 27538831 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 27538831 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 27597872 in 6 places, all below massif's threshold (1.00%)
+ n1: 12093720 0x109C56: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 12093720 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 12093720 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+#-----------
+snapshot=22
+#-----------
+time=36933247758
+mem_heap_B=919213479
+mem_heap_extra_B=270769697
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=38519842961
+mem_heap_B=954329360
+mem_heap_extra_B=281314128
+mem_stacks_B=0
+heap_tree=detailed
+n7: 954329360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 226912160 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 226912160 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 226912160 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 210663176 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 210663176 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 210663176 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 201862000 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 201862000 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 201862000 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 200467392 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 200467392 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 200467392 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 73577472 0x48F538E: strdup (strdup.c:42)
+  n1: 44347211 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 44347211 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 44347211 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 29230261 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 29230261 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 29230261 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 28025824 in 6 places, all below massif's threshold (1.00%)
+ n1: 12821336 0x109C56: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 12821336 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 12821336 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+#-----------
+snapshot=24
+#-----------
+time=40712946463
+mem_heap_B=1003918924
+mem_heap_extra_B=296204916
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=42357772878
+mem_heap_B=1040819245
+mem_heap_extra_B=307311635
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=45099150809
+mem_heap_B=1101858833
+mem_heap_extra_B=325632791
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=47840531016
+mem_heap_B=1162246326
+mem_heap_extra_B=343595962
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=50581909729
+mem_heap_B=1222972452
+mem_heap_extra_B=361960196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=52226736656
+mem_heap_B=1258313018
+mem_heap_extra_B=372382806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=54968115999
+mem_heap_B=1316801863
+mem_heap_extra_B=389421105
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1316801863 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 298315200 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 298315200 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 298315200 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 296763096 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 296763096 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 296763096 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 287203536 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 287203536 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 287203536 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 285793608 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 285793608 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 285793608 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 101980839 0x48F538E: strdup (strdup.c:42)
+  n1: 63468885 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 63468885 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 63468885 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 38511954 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 38511954 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 38511954 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 46745584 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=57161217991
+mem_heap_B=1367518170
+mem_heap_extra_B=405376366
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=59902597559
+mem_heap_B=1431139937
+mem_heap_extra_B=425552183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=62095700470
+mem_heap_B=1480331166
+mem_heap_extra_B=440983058
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=63740528532
+mem_heap_B=1517240853
+mem_heap_extra_B=452613595
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=65933634124
+mem_heap_B=1565188652
+mem_heap_extra_B=467443028
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1565188652 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 353691280 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 353691280 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 353691280 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 353330584 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 353330584 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 353330584 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 345377232 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 345377232 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 345377232 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 340516120 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 340516120 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 340516120 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 121047652 0x48F538E: strdup (strdup.c:42)
+  n1: 75588405 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 75588405 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 75588405 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 45459247 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 45459247 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 45459247 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 51225784 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=67030187604
+mem_heap_B=1588845152
+mem_heap_extra_B=474790272
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=69223295834
+mem_heap_B=1634890621
+mem_heap_extra_B=488845467
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=71416401802
+mem_heap_B=1678645373
+mem_heap_extra_B=501586275
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1678645373 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 381228944 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 381228944 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 381228944 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 373709760 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 373709760 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 373709760 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 373257600 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 373257600 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 373257600 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 368053192 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 368053192 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 368053192 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 129411709 0x48F538E: strdup (strdup.c:42)
+  n1: 81491015 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 81491015 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 81491015 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 47920694 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 47920694 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 47920694 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 52984168 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=72512956722
+mem_heap_B=1700353440
+mem_heap_extra_B=507910160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=74157787410
+mem_heap_B=1731697230
+mem_heap_extra_B=516739626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=75802617348
+mem_heap_B=1762225275
+mem_heap_extra_B=525152357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=77447447787
+mem_heap_B=1792565719
+mem_heap_extra_B=533440161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=80188832812
+mem_heap_B=1842524688
+mem_heap_extra_B=546966848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=82235511132
+mem_heap_B=1879607986
+mem_heap_extra_B=556895870
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1879607986 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n2: 143100626 0x48F538E: strdup (strdup.c:42)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 55179216 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=84976894911
+mem_heap_B=1918524143
+mem_heap_extra_B=583275625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=86621727668
+mem_heap_B=1941810532
+mem_heap_extra_B=597588764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=89363113155
+mem_heap_B=1980665169
+mem_heap_extra_B=621255111
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=91007950027
+mem_heap_B=2005734444
+mem_heap_extra_B=636801772
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=93201056789
+mem_heap_B=2041922094
+mem_heap_extra_B=660111826
+mem_stacks_B=0
+heap_tree=detailed
+n6: 2041922094 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n3: 305414734 0x48F538E: strdup (strdup.c:42)
+  n1: 162314108 0x109EB4: save_movie_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 162314108 0x10A00E: save_all_movies_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 162314108 0x109950: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 55179216 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=94258784033
+mem_heap_B=2059550311
+mem_heap_extra_B=671183105
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=94279428085
+mem_heap_B=2059888328
+mem_heap_extra_B=671396240
+mem_stacks_B=0
+heap_tree=detailed
+n6: 2059888328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n3: 323380968 0x48F538E: strdup (strdup.c:42)
+  n1: 180280342 0x109EB4: save_movie_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 180280342 0x10A00E: save_all_movies_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 180280342 0x109950: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 55179216 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=95337156279
+mem_heap_B=2066980049
+mem_heap_extra_B=675179471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=96394883621
+mem_heap_B=2073821737
+mem_heap_extra_B=678814799
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=97452613323
+mem_heap_B=2080480262
+mem_heap_extra_B=682398402
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=98510343588
+mem_heap_B=2085186312
+mem_heap_extra_B=686103304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=99568073617
+mem_heap_B=2089397389
+mem_heap_extra_B=689314379
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=100625801911
+mem_heap_B=2093578292
+mem_heap_extra_B=692727276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=101683529221
+mem_heap_B=2097745594
+mem_heap_extra_B=696362182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=102741256344
+mem_heap_B=2101857884
+mem_heap_extra_B=699965708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=103798992657
+mem_heap_B=2105771007
+mem_heap_extra_B=703426473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=104856731846
+mem_heap_B=2109481650
+mem_heap_extra_B=706619222
+mem_stacks_B=0
+heap_tree=detailed
+n6: 2109481650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n4: 348158050 0x48F538E: strdup (strdup.c:42)
+  n1: 180280342 0x109EB4: save_movie_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 180280342 0x10A00E: save_all_movies_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 180280342 0x109950: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n0: 24777082 in 1 place, below massif's threshold (1.00%)
+ n0: 79995456 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=105914465895
+mem_heap_B=2112990228
+mem_heap_extra_B=709780580
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=106972199275
+mem_heap_B=2116431474
+mem_heap_extra_B=712985742
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=108029926309
+mem_heap_B=2121277807
+mem_heap_extra_B=716512489
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=109087653815
+mem_heap_B=2127342803
+mem_heap_extra_B=720407141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=110145396862
+mem_heap_B=2133017953
+mem_heap_extra_B=724093367
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=111203135552
+mem_heap_B=2138354235
+mem_heap_extra_B=727595789
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=112260863055
+mem_heap_B=2143876077
+mem_heap_extra_B=731351315
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=113318592884
+mem_heap_B=2149498317
+mem_heap_extra_B=735344779
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=114376320202
+mem_heap_B=2155032979
+mem_heap_extra_B=739345693
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=115434048949
+mem_heap_B=2160505592
+mem_heap_extra_B=743407728
+mem_stacks_B=0
+heap_tree=detailed
+n7: 2160505592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n4: 372084896 0x48F538E: strdup (strdup.c:42)
+  n1: 180280342 0x109EB4: save_movie_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 180280342 0x10A00E: save_all_movies_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 180280342 0x109950: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 48703928 0x109F3C: save_actor_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 48703928 0x10A33A: save_all_actors_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 48703928 0x10995A: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 61596792 in 8 places, all below massif's threshold (1.00%)
+ n1: 45495760 0x10A1F9: save_actor_main_titles (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 45495760 0x10A34D: save_all_actors_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 45495760 0x10995A: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+#-----------
+snapshot=72
+#-----------
+time=116491787325
+mem_heap_B=2165788612
+mem_heap_extra_B=747372964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=117549575029
+mem_heap_B=2171228000
+mem_heap_extra_B=751579712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=118607302378
+mem_heap_B=2176577865
+mem_heap_extra_B=755829455
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=119665029823
+mem_heap_B=2181938357
+mem_heap_extra_B=760138923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=120722774915
+mem_heap_B=2187213956
+mem_heap_extra_B=764459908
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=121780503023
+mem_heap_B=2192393771
+mem_heap_extra_B=768768557
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=122838285740
+mem_heap_B=2197482133
+mem_heap_extra_B=773079611
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=123671760919
+mem_heap_B=2201545664
+mem_heap_extra_B=776582760
+mem_stacks_B=0
+heap_tree=peak
+n7: 2201545664 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 436432712 0x109D1F: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 436432712 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 436432712 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 423719328 0x109B80: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 423719328 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 423719328 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 422800264 0x109C98: exchange_pointers (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 422800264 0x109E21: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 422800264 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n1: 398375840 0x109A83: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 398375840 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 398375840 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n4: 392658288 0x48F538E: strdup (strdup.c:42)
+  n1: 180280342 0x109EB4: save_movie_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 180280342 0x10A00E: save_all_movies_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 180280342 0x109950: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 91909675 0x109B90: save_movie (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 91909675 0x109E0A: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 91909675 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 69277320 0x109F3C: save_actor_name (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 69277320 0x10A33A: save_all_actors_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 69277320 0x10995A: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 51190951 0x109A93: save_actor (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n1: 51190951 0x109DFA: make_all_connections (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+    n0: 51190951 0x109946: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+ n0: 65968832 in 8 places, all below massif's threshold (1.00%)
+ n1: 61590400 0x10A1F9: save_actor_main_titles (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+  n1: 61590400 0x10A34D: save_all_actors_names (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+   n0: 61590400 0x10995A: main (in /home/pedro/Documents/Tecnico/IAED/cinex_search/src/CinexSearch)
+#-----------
+snapshot=80
+#-----------
+time=138562910347
+mem_heap_B=2201541568
+mem_heap_extra_B=776582752
+mem_stacks_B=0
+heap_tree=empty

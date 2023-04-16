@@ -30,9 +30,6 @@ struct actor_node {
     Actor_Node *parent_actor;
     Movie_Node *parent_movie;
 
-    /* 0 not, 1 yes */
-    /* Grey is needed because  */
-    /* OPTIMIZATIONS: Only use 2 bits for black, grey or white */
     int visited : 1;
 };
 
@@ -44,8 +41,6 @@ struct movie_node {
     unsigned short num_actors_in_movie;
     Actor_Node **actors_list;
 
-    /* 0 not, 1 yes */
-    /* OPTIMIZATIONS: Only use a bit for yes or no */
     int visited : 1;
 };
 
