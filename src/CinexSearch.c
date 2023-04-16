@@ -84,6 +84,21 @@ Actor_Node *check_for_collisions_and_return_correct_actor_pointer () {
 
 }
 
+void ask_user_actors_and_do_bfs() {
+    printf("Source actor name: ");
+    Actor_Node *origin_actor = check_for_collisions_and_return_correct_actor_pointer();
+    printf("Destiny actor name: ");
+    Actor_Node *destiny_actor = check_for_collisions_and_return_correct_actor_pointer();
+
+    clock_t start, end;
+    start = clock();
+    bfs_search(origin_actor, destiny_actor);
+
+    end = clock();
+    double total_time_passed = ((double)(end - start) / CLOCKS_PER_SEC);
+    printf("Elapsed time for search: %.5fs.\n", total_time_passed);
+}
+
 int main() {
 
     unsigned int curr_num, i = 0;
@@ -121,14 +136,17 @@ int main() {
     total_time_passed = ((double)(end - start) / CLOCKS_PER_SEC);
 
     printf("Elapsed time for graph creation: %.3fs.\n", total_time_passed);
-    printf("Source actor name: ");
-    Actor_Node *actor1 = check_for_collisions_and_return_correct_actor_pointer();
-    printf("\n");
-    printf("Destiny actor name: ");
-    Actor_Node *actor2 = check_for_collisions_and_return_correct_actor_pointer();
 
+    ask_user_actors_and_do_bfs();
 
-    /* bfs_search(actor1, actor2); */
+    printf("Do you want to search again? Y/N\n");
+    char c = getchar();
+    while (c == 'Y') {
+        flush_stdin();
+        ask_user_actors_and_do_bfs();
+        printf("Do you want to search again? Y/N\n");
+        c = getchar();
+    }
 
     /*
     while(fgets(buffer, BUFFER_SIZE, stdin)) {

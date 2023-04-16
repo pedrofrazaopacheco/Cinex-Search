@@ -13,6 +13,7 @@ Actor_Node *save_actor(char *actor_id) {
     new_actor->total_num_movies = 0;
     new_actor->movies_list = NULL;
     new_actor->actor_name = NULL;
+    new_actor->visited = 0;
     new_actor->next = actors_initial_hashmap[actor_index];
     actors_initial_hashmap[actor_index] = new_actor;
     return new_actor;
@@ -31,6 +32,7 @@ Movie_Node *save_movie(char *movie_id) {
     new_movie->num_actors_in_movie = 0;
     new_movie->actors_list = NULL;
     new_movie->movie_name = NULL;
+    new_movie->visited = 0;
     new_movie->next = movies_initial_hashmap[movie_index];
     movies_initial_hashmap[movie_index] = new_movie;
     return new_movie;

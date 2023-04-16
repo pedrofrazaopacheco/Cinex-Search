@@ -21,15 +21,19 @@ struct actor_node {
     char *actor_name;
     char *actor_id;
     Actor_Node *next;
+
     unsigned short total_num_movies;
     Movie_Node **movies_list;
+    unsigned short total_num_main_movies;
+    Movie_Node **main_movies_list;
 
     Actor_Node *parent_actor;
     Movie_Node *parent_movie;
-    int visited : 2;
 
-    unsigned short total_num_main_movies;
-    Movie_Node **main_movies_list;
+    /* 0 not, 1 yes */
+    /* Grey is needed because  */
+    /* OPTIMIZATIONS: Only use 2 bits for black, grey or white */
+    int visited : 1;
 };
 
 // Movie_Node struct definition
@@ -39,6 +43,10 @@ struct movie_node {
     Movie_Node *next;
     unsigned short num_actors_in_movie;
     Actor_Node **actors_list;
+
+    /* 0 not, 1 yes */
+    /* OPTIMIZATIONS: Only use a bit for yes or no */
+    int visited : 1;
 };
 
 
@@ -51,5 +59,6 @@ unsigned int hash(char *string);
 
 /* Needs to be at the end to get everything */
 #include "HashMapCreation.h"
+#include "BFSSearch.h"
 
 #endif
