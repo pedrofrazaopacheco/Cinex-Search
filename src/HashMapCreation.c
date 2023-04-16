@@ -130,11 +130,55 @@ void save_all_movies_names() {
 
 }
 
+Actor_Node *get_actor_pointer(char *actor_id) {
+    int actor_index = hash(actor_id);
+    Actor_Node *current_actor = actors_initial_hashmap[actor_index];
+    while (current_actor != NULL) {
+        if (strcmp(current_actor->actor_id, actor_id) == 0) return current_actor;
+        current_actor = current_actor->next;
+    }
+    return NULL;
+}
+
+Movie_Node *get_movie_pointer(char *movie_id) {
+    int movie_index = hash(movie_id);
+    Movie_Node *current_movie = movies_initial_hashmap[movie_index];
+    while (current_movie != NULL) {
+        if (strcmp(current_movie->movie_id, movie_id) == 0) return current_movie;
+        current_movie = current_movie->next;
+    }
+    return NULL;
+}
+
+void save_actor_main_titles(char *actor_id, char *movies_ids) {
+    char *movie_id = strtok(movies_ids, ",");
+    Actor_Node *chosen_actor = get_actor_pointer(actor_id);
+    Movie_Node *chosen_movie;
+    if (chosen_actor != NULL) {
+        chosen_actor->total_num_main_movies = 0;
+        while (movie_id != NULL) {
+            chosen_movie = get_movie_pointer(movie_id);
+            if (chosen_movie != NULL) {
+                chosen_actor->total_num_main_movies++;
+                if (chosen_actor->total_num_main_movies == 1) {
+                    chosen_actor->main_movies_list = malloc(sizeof(Movie_Node*));
+                } else {
+                    chosen_actor->main_movies_list = realloc(chosen_actor->main_movies_list, chosen_actor->total_num_main_movies * sizeof(Movie_Node*));
+                }
+                chosen_actor->main_movies_list[chosen_actor->total_num_main_movies - 1] = chosen_movie;
+            }
+            movie_id = strtok(NULL, ",");
+        }
+    }
+    
+}
+
 void save_all_actors_names() {
-    char *actor_id, *name;
+    char *actor_id, *name, *birth_year, *death_year, *profession, *titles;
     FILE *actors_data;
     actors_data = fopen("../data/actors_data.tsv", "r");
     /* The first line does not matter */
+    // nconst	primaryName	birthYear	deathYear	primaryProfession	knownForTitles
     fgets(buffer, BUFFER_SIZE, actors_data);
     Movie_Node *movie_node;
 
@@ -142,8 +186,13 @@ void save_all_actors_names() {
         buffer[strcspn(buffer, "\n")] = 0;
         actor_id = strtok(buffer, "\t");
         name = strtok(NULL, "\t");
+        birth_year = strtok(NULL, "\t");
+        death_year = strtok(NULL, "\t");
+        profession = strtok(NULL, "\t");
+        titles = strtok(NULL, "\t");
 
         save_actor_name(actor_id, name);
+        save_actor_main_titles(actor_id, titles);
     }
     fclose(actors_data);
 }

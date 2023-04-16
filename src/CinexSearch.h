@@ -22,11 +22,14 @@ struct actor_node {
     char *actor_id;
     Actor_Node *next;
     unsigned short total_num_movies;
+    Movie_Node **movies_list;
 
     Actor_Node *parent_actor;
     Movie_Node *parent_movie;
     int visited : 2;
-    Movie_Node **movies_list;
+
+    unsigned short total_num_main_movies;
+    Movie_Node **main_movies_list;
 };
 
 // Movie_Node struct definition

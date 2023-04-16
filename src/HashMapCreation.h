@@ -13,5 +13,8 @@ void save_all_actors_names();
 void make_final_actor_hashmap();
 void save_actor_node_final_hashmap(char *actor_id, char *actor_name);
 
+void save_actor_main_titles(char *actor_id, char *titles);
+Actor_Node *get_actor_pointer(char *actor_id);
+Movie_Node *get_movie_pointer(char *movie_id);
 
 #endif

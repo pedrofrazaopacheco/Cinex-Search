@@ -23,6 +23,13 @@ int check_actor_on_list(Actor_Node **repeated_actors, char *actor_id, int total_
     return FALSE;
 }
 
+void flush_stdin() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) {
+        // discard the character
+    }
+}
+
 Actor_Node *check_for_collisions_and_return_correct_actor_pointer () {
     /* Ask the user for the name */
     /* Make a list of all the ids */
@@ -34,16 +41,12 @@ Actor_Node *check_for_collisions_and_return_correct_actor_pointer () {
     Actor_Node *current_actor;
     Actor_Node **repeated_actors;
     char **repeated_ids;
-
     char *actor_name;
     int total_num_actors = 0;
-
     fgets(buffer, BUFFER_SIZE, stdin);
-    actor_name = strtok(buffer, "\\N");
-
+    actor_name = strdup(strtok(buffer, "\n"));
     int actor_index = hash(actor_name);
     current_actor = actors_final_hashmap[actor_index];
-
     while(current_actor != NULL) {
         if (strcmp(current_actor->actor_name, actor_name) == 0) {
             total_num_actors += 1;
@@ -53,51 +56,28 @@ Actor_Node *check_for_collisions_and_return_correct_actor_pointer () {
         }
         current_actor = current_actor->next;
     }
-
-
+    Actor_Node* repeated_actors_final[total_num_actors - 1];
+    int repeated_actors_final_count = 0;
 
     if (total_num_actors > 1) {
-        repeated_ids = malloc(total_num_actors * sizeof(char*));
-        char *actor_id, *name, *birth_year, *death_year, *profession, *movies, *movie_id;
-        Movie_Node *curr_movie;
-
-        FILE *actors_file;
-        actors_file = fopen("../data/actors_data.tsv", "r");
-
-        int curr_id_index = 0, movie_hash_index;
-        while (fgets(buffer, BUFFER_SIZE, actors_file)) {
-            actor_id = strtok(buffer, "\t");
-
-            if(check_actor_on_list(repeated_actors, actor_id, total_num_actors)) {
-                name = strtok(NULL, "\t");
-                birth_year = strtok(NULL, "\t");
-                death_year = strtok(NULL, "\t");
-                profession = strtok(NULL, "\t");
-                movies = strtok(NULL, "\t");
-                
-                printf("%s option %d: ", actor_name,  curr_id_index + 1);
-                movie_id = strtok(movies, ",");
-                while (movie_id != NULL) {
-                    movie_hash_index = hash(movie_id);
-                    curr_movie = movies_initial_hashmap[movie_hash_index];
-
-                    while (curr_movie != NULL) {
-                        if (strcmp(curr_movie->movie_id, movie_id) == 0) {
-                            printf("%s\t", curr_movie->movie_name);
-                            break;
-                        }
-                        curr_movie = curr_movie->next;
-                    }
-                    movie_id = strtok(NULL, ",");
-                }
-                printf("\n");
-                curr_id_index++;
-            };
-
+        for (int i = 0; i < total_num_actors; i++) {
+            if (repeated_actors[i]->total_num_main_movies > 0) {
+                repeated_actors_final[repeated_actors_final_count] = repeated_actors[i];
+                repeated_actors_final_count++;
+                printf("\n%s option %d:\t", repeated_actors[i]->actor_name, i + 1);
+            }
+            for (int j = 0; j < repeated_actors[i]->total_num_main_movies; j++) {
+                if (j != 0) printf(", ");
+                printf("%s", repeated_actors[i]->main_movies_list[j]->movie_name);
+            }
         }
-        
-    }
 
+        int chosen_option;
+        printf("\nWhich Option?: ");
+        scanf("%d", &chosen_option);
+        flush_stdin();
+        return repeated_actors_final[chosen_option - 1];
+    }
     else {
         return repeated_actors[0];
     }
@@ -142,23 +122,15 @@ int main() {
 
     printf("Elapsed time for graph creation: %.3fs.\n", total_time_passed);
     printf("Source actor name: ");
-    check_for_collisions_and_return_correct_actor_pointer();
+    Actor_Node *actor1 = check_for_collisions_and_return_correct_actor_pointer();
     printf("\n");
-
     printf("Destiny actor name: ");
-    check_for_collisions_and_return_correct_actor_pointer();
-
-    /* Perguntar ao user o nome da pessoa -  */  
-
-    /* Handle the name collision error. */
-
-    /* Ter 2 arrays que vão aumentando o tamanho */
-    /* Visited -> o node já tem a cor */
-    /* Queue -> Vai aumentado */
-    /* Distância -> Vai aumentado */
-    /* Pai -> Vai aumentado */
+    Actor_Node *actor2 = check_for_collisions_and_return_correct_actor_pointer();
 
 
+    /* bfs_search(actor1, actor2); */
+
+    /*
     while(fgets(buffer, BUFFER_SIZE, stdin)) {
         char *actor_name = strtok(buffer, "\n");
         unsigned int actor_index = hash(actor_name);
@@ -177,6 +149,7 @@ int main() {
             current_actor = current_actor->next;
         }
     }
+    */
 
     return 0;
 }
