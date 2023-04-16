@@ -154,14 +154,7 @@ void save_actor_node_final_hashmap(char *actor_id, char *actor_name) {
     Actor_Node *curr_node = actors_initial_hashmap[actor_index];
     Actor_Node *prev_node = NULL;
 
-    if (strcmp(actor_name, "Ana de Armas") == 0) {
-        printf("We got ana de armas HERE BBY\n");
-    }
-
     while (curr_node != NULL) {
-        if (strcmp(actor_name, "Ana de Armas") == 0) {
-            printf("Name: %s, Id: %s, Provided ID: %s\n", curr_node->actor_name, curr_node->actor_id, actor_id);
-        }
         if (strcmp(curr_node->actor_id, actor_id) == 0) {
             // Update the head pointer of the initial hash map's bucket
             if (prev_node == NULL) {

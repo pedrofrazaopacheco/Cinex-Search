@@ -21,7 +21,11 @@ struct actor_node {
     char *actor_name;
     char *actor_id;
     Actor_Node *next;
-    int total_num_movies;
+    unsigned short total_num_movies;
+
+    Actor_Node *parent_actor;
+    Movie_Node *parent_movie;
+    int visited : 2;
     Movie_Node **movies_list;
 };
 
@@ -30,7 +34,7 @@ struct movie_node {
     char *movie_id;
     char *movie_name;
     Movie_Node *next;
-    int num_actors_in_movie;
+    unsigned short num_actors_in_movie;
     Actor_Node **actors_list;
 };
 
