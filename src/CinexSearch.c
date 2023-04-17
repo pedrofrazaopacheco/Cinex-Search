@@ -64,12 +64,13 @@ Actor_Node *check_for_collisions_and_return_correct_actor_pointer () {
             if (repeated_actors[i]->total_num_main_movies > 0) {
                 repeated_actors_final[repeated_actors_final_count] = repeated_actors[i];
                 repeated_actors_final_count++;
-                printf("\n%s option %d:\t", repeated_actors[i]->actor_name, i + 1);
+                printf("\n%s option %d:\t", repeated_actors[i]->actor_name, repeated_actors_final_count);
+                for (int j = 0; j < repeated_actors[i]->total_num_main_movies; j++) {
+                    if (j != 0) printf(", ");
+                    printf("%s", repeated_actors[i]->main_movies_list[j]->movie_name);
+                }
             }
-            for (int j = 0; j < repeated_actors[i]->total_num_main_movies; j++) {
-                if (j != 0) printf(", ");
-                printf("%s", repeated_actors[i]->main_movies_list[j]->movie_name);
-            }
+
         }
 
         int chosen_option;

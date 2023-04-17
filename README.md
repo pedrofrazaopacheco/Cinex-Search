@@ -10,7 +10,7 @@ The datasets were not modified to fit anything and so, a bridge can be an odd ta
 # Installation
 The link to the datasets is [here](https://datasets.imdbws.com/).
 Datasets names: **name.basics.tsv.gz**, **title.basics.tsv.gz**, **title.principals.tsv.gz**
-Please extract to the following names:
+Please extract the files to a folder called data with the following names:
 - name.basics.tsv.gz → actors_data.tsv
 - title.basics.tsv.gz → titles_data.tsv
 - title.principals.tsv.gz → common_data.tsv
